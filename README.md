@@ -6,8 +6,24 @@ Este trabalho foi feito para a disciplina de Compiladores 2025.1.
 
 https://docs.google.com/document/d/1gd5CAx7TANLPxiicyyiHoWW7PkRUrZ-hBazmdUGjkoI/edit?tab=t.0
 
+## Como utilizar
+
+**Instale o Python**
+Se você ainda não tem python instalado em seu computador, é possível baixar no site oficial do Python em python.org.
+
+Para verificar se você já tem o python instalado, no seu terminal rode o comando `python`.
+
+**Rodando o Projeto**
+Abre ao terminal e na raiz do projeto digite o seguinte comando:
+
+```bash
+python3 src/main.py
+```
+
+## Descrição de Requisição do projeto
+
 **Requisitos:**
-1. Definição dos tokens da linguagem (palavras reservadas, identificadores, símbolos especiais, constantes). Os tokens são fornecidos via arquivo de entrada conforme projeto prático desenvolvido em LFA.
+1. Definição dos tokens da linguagem (palavras reservadas, identificadores, símbolos especiais, constantes). Os tokens são f ornecidos via arquivo de entrada conforme projeto prático desenvolvido em LFA.
 
 2. Uso da aplicação para gerar AFD desenvolvida em LFA.
 
