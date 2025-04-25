@@ -1,3 +1,5 @@
-This is some text
-
-B::= a|b|c
+if (a + b) {
+    x = 5;
+} else {
+    x = x + 1;
+}
