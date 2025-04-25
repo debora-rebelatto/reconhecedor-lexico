@@ -72,14 +72,12 @@ class AnalisadorLexico:
         self.current_line = 1
         pos = 0
         while pos < len(codigo):
-            # Handle whitespace and newlines
             if codigo[pos].isspace():
                 if codigo[pos] == '\n':
                     self.current_line += 1
                 pos += 1
                 continue
 
-            # Try AFD first for characters in its alphabet
             if codigo[pos] in self.afd.get('alfabeto', []):
                 tipo, token_value, new_pos = self.reconhecer_token_afd(codigo, pos)
                 if tipo:
@@ -93,9 +91,6 @@ class AnalisadorLexico:
                     pos = new_pos
                     continue
 
-            # Fallback to regex for other tokens
-            # Find the longest matching token
-            matched = False
             for i in range(len(codigo), pos - 1, -1):
                 lexema = codigo[pos:i]
                 tipo = self.reconhecer_token_regex(lexema)
