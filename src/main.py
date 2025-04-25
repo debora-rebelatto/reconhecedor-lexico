@@ -125,7 +125,7 @@ class AnalisadorLexico:
 
 def main():
     analisador = AnalisadorLexico('tokens.txt', 'afd.json')
-    analisador.analisar_sentencas('codigo_fonte.txt')
+    analisador.analisar_sentencas('input.txt')
     analisador.imprimir_resultados()
 
 if __name__ == "__main__":
